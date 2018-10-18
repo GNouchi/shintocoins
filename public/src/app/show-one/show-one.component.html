@@ -1,0 +1,11 @@
+<div *ngIf="!transaction" >
+    <h1> No Transaction corresponds to this id! </h1>
+</div>
+
+
+<div *ngIf="transaction" >
+  <h1>Showing Transaction ID: {{transaction.id}} </h1>
+  <p>Amount: {{transaction.amount}} </p>
+  <p>Category: {{transaction.category}} </p>
+  <p>Balance: {{transaction.balance}} </p>
+</div>

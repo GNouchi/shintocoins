@@ -1,0 +1,13 @@
+<div class="mainbody">
+    <h1>Mine ShintoCoin</h1>
+    <h3>Welcome to ShintoCoins! Solve Algorithms as simulated Proof-of-work to mine coins!</h3>
+
+    <p>{{result}}</p>
+    <p>On: {{currentQ}} / {{questions.length}}</p>
+    <p>
+        <input name="answer" [(ngModel)]="answer" class="input" type="number">
+        <button (click)="checkAnswer()" >Submit Answer</button>
+    </p>
+
+
+</div>

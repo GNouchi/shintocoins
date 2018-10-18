@@ -1,0 +1,21 @@
+<div class="mainbody">
+    <h1>ShintoCoin Ledger</h1>
+
+    <table  *ngIf="ledger.length>0"  >
+        <tr>
+            <th>Action</th>
+            <th>Amount</th>
+            <th>Balance</th>
+        </tr>
+        <tr *ngFor="let entry of ledger"  >
+            <td>{{entry.category}}</td>
+            <td>{{entry.amount}}</td>
+            <td>{{entry.balance}}</td>
+            <td>
+                <button class="wipe" [routerLink]="['/transaction/'+entry.id]">Show {{entry.id}}</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
